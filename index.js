@@ -64,7 +64,7 @@ const handleSearch = async () => {
     // console.log(searchKeyword);
 
     arrData.forEach((item) => {
-      if (item.name.toLowerCase() === searchKeyword) {
+      if (item.name.toLowerCase().includes(searchKeyword)) {
         const box = document.createElement("div");
 
         const p = document.createElement("p");
@@ -75,8 +75,22 @@ const handleSearch = async () => {
         image.setAttribute("src", `${item.image}`);
         box.prepend(image);
         container.append(box);
-      }
+
+        const btn = document.querySelector('.input > button > img')
+        btn.setAttribute('src', './close.svg')
+        btn.addEventListener('click', () => {
+          window.location.reload()
+        })
+      } else{
+        
+        const btn = document.querySelector('.input > button > img')
+        btn.setAttribute('src', './src/close.svg')
+        btn.addEventListener('click', () => {
+          window.location.reload()
+        })
+        }
     });
+
 
   });
 };

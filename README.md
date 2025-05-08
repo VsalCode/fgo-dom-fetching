@@ -1,10 +1,18 @@
-# Rick and Morty
+# Rick and Morty API Project
 
-In this project, I fetch data from rick and morty API
+In this project, I fetch and display data from the Rick and Morty API. The goal is to explore how to work with external APIs and dynamically render data in a web application.
 
 ## Preview
 
-![preview](./image.png)
+#### Dekstop View
+![preview](./src/preview.png)
+
+#### Search Not Found
+![preview](./src/preview-notfound.png)
+
+#### Mobile View
+![preview](./src/preview-mobile.png)
+
 
 ## How To Run This Project
 
