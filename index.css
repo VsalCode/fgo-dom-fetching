@@ -10,6 +10,7 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 10px 100px;
 }
 
 body > img {
@@ -17,19 +18,20 @@ body > img {
 }
 
 #container {
-  background-color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 10px 100px;
   border-radius: 20px;
 }
 
 #container > div {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px 10px;
+  padding: 15px;
+  border-radius: 5px;
 }
 
 #container > div > p {
@@ -38,11 +40,43 @@ body > img {
   font-family: Helvetica, sans-serif;
   font-size: 20px;
   padding-top: 20px;
+  text-align: center;
 }
 
 #container > div > img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 30px;
+  width: 90%;
+  border-radius: 7px;
+  margin-bottom: 7vh;
+}
+
+.input > input {
+  flex: 1;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.input > input:focus{
+  outline: none;
+}
+
+.input > button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.off {
+  display: none;
 }
 
 @media (max-width: 936px) {
