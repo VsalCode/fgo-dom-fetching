@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+#container {
+  background-color: #222831;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#container > div > p {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+#container > div > img {
+  width: 200px;
+  height: 200px;
+}
